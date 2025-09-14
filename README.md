@@ -92,12 +92,12 @@ Número de Pontos Turísticos: 30
 
 1. Compile o programa:
    ```bash
-   gcc supertrunfo.c -o supertrunfo
+   gcc super_trunfo.c -o super_trunfo
    ```
 
 2. Execute o programa:
    ```bash
-   ./supertrunfo
+   ./super_trunfo
    ```
 
 3. Digite os dados solicitados para cadastrar as duas cartas.  
