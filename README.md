@@ -1,96 +1,116 @@
-# supertrunfo_estacio_01
+# 🃏 Super Trunfo - Nível Novato (Estácio - Exercício 01)
 
-Desafio: nível novato
-Criando as Cartas do Super Trunfo
+Este projeto é o **primeiro desafio prático** do jogo **Super Trunfo de Países/Cidades**, desenvolvido em linguagem C.  
+O objetivo é praticar a **leitura de dados do usuário**, o **armazenamento em variáveis** e a **exibição formatada das informações**.
 
+---
 
-Neste primeiro nível, seu objetivo é construir a base do nosso jogo Super Trunfo de Países: um sistema para cadastrar as cartas com informações sobre as cidades. Você vai praticar a leitura de dados do usuário, o armazenamento em variáveis e a exibição dessas informações na tela.
+## 🎯 Objetivo do Exercício
 
+Criar um programa em C que permita ao usuário cadastrar **duas cartas** do Super Trunfo com informações sobre cidades.  
+Após o cadastro, os dados devem ser exibidos de forma clara e organizada na tela.
 
-O que você vai fazer
+---
 
+## 📋 Dados de cada carta
 
-Criar um programa em C que permita ao usuário inserir os dados de duas cartas do Super Trunfo. Para cada carta, o usuário deverá fornecer as seguintes informações:
+Cada carta deve armazenar as seguintes informações:
 
- 
+- **Estado:** Uma letra de `A` a `H` (char).  
+- **Código da Carta:** A letra do estado seguida de um número de `01` a `04` (string).  
+- **Nome da Cidade:** Nome da cidade (string).  
+- **População:** Número de habitantes (int).  
+- **Área:** Área da cidade em km² (float).  
+- **PIB:** Produto Interno Bruto em bilhões de reais (float).  
+- **Número de Pontos Turísticos:** Quantidade de pontos turísticos (int).  
 
-Estado: Uma letra de 'A' a 'H' (representando um dos oito estados). Tipo: char
- 
-Código da Carta: A letra do estado seguida de um número de 01 a 04 (ex: A01, B03). Tipo: char[] (um array de caracteres, ou string)
- 
-Nome da Cidade: O nome da cidade. Tipo: char[] (string)
- 
-População: O número de habitantes da cidade. Tipo: int
- 
-Área (em km²): A área da cidade em quilômetros quadrados. Tipo: float
- 
-PIB: O Produto Interno Bruto da cidade. Tipo: float
- 
-Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tipo: int
- 
+---
 
-Após o usuário inserir os dados de cada carta, seu programa deve exibir na tela as informações cadastradas, de forma organizada e legível. Para cada carta, imprima cada informação em uma linha separada, com uma descrição clara. Por exemplo:
+## 📌 Regras e Simplificações
 
- 
+- O programa deve **cadastrar apenas duas cartas**.  
+- Não utilizar **estruturas de repetição** (`for`, `while`) nem **estruturas de decisão** (`if`, `else`).  
+- O código deve ser uma **sequência linear de instruções**.  
+- O foco é apenas **ler, armazenar e exibir** os dados (sem comparações entre cartas).  
 
-Carta 1:
+---
 
+## 🖥️ Exemplo de Execução
+
+### Entrada do Usuário:
+```
+Cadastro da Carta 1
+Digite o estado (A-H): A
+Digite o código da carta (Ex: A01): A01
+Digite o nome da cidade: São Paulo
+Digite a população: 12325000
+Digite a área em km²: 1521.11
+Digite o PIB (em bilhões de reais): 699.28
+Digite o número de pontos turísticos: 50
+
+Cadastro da Carta 2
+Digite o estado (A-H): B
+Digite o código da carta (Ex: B02): B02
+Digite o nome da cidade: Rio de Janeiro
+Digite a população: 6748000
+Digite a área em km²: 1200.25
+Digite o PIB (em bilhões de reais): 300.50
+Digite o número de pontos turísticos: 30
+```
+
+### Saída esperada:
+```
+=== Carta 1 ===
 Estado: A
-
 Código: A01
-
 Nome da Cidade: São Paulo
-
 População: 12325000
-
 Área: 1521.11 km²
-
 PIB: 699.28 bilhões de reais
-
 Número de Pontos Turísticos: 50
 
- 
-
-Carta 2:
-
+=== Carta 2 ===
 Estado: B
-
 Código: B02
-
 Nome da Cidade: Rio de Janeiro
-
 População: 6748000
-
 Área: 1200.25 km²
-
 PIB: 300.50 bilhões de reais
+Número de Pontos Turísticos: 30
+```
 
-Número de Pontos Turísticos: 30    
+---
 
+## 🛠️ Tecnologias Utilizadas
 
-Requisitos funcionais
+- Linguagem **C**
+- Entrada/Saída padrão (`scanf` e `printf`)
 
+---
 
-O programa deve ler corretamente os dados de duas cartas do usuário via entrada padrão (teclado).
- 
-O programa deve armazenar os dados lidos em variáveis apropriadas.
- 
-O programa deve exibir os dados de cada carta na tela, formatados de forma clara e organizada, conforme o exemplo acima.
+## 🚀 Como Executar
 
-Requisitos não funcionais
+1. Compile o programa:
+   ```bash
+   gcc supertrunfo.c -o supertrunfo
+   ```
 
+2. Execute o programa:
+   ```bash
+   ./supertrunfo
+   ```
 
-Usabilidade: O programa deve ser fácil de usar, com instruções claras para o usuário.
- 
-Legibilidade: O código deve ser bem indentado, com comentários explicativos e nomes de variáveis significativos, facilitando a leitura e compreensão.
- 
-Corretude: O programa deve funcionar corretamente, sem erros de compilação ou execução.
+3. Digite os dados solicitados para cadastrar as duas cartas.  
 
-Simplificações para o desafio
+---
 
+## ✅ Critérios de Avaliação
 
-Você só precisa implementar o cadastro e a exibição de duas cartas.
- 
-Neste nível, foque apenas na leitura, armazenamento e exibição das informações. Você não precisa implementar nenhuma lógica de comparação entre as cartas ou qualquer outro recurso adicional.
- 
-Não utilize estruturas de repetição (como for ou while) ou estruturas de decisão (como if ou else). Seu código deve ser uma sequência simples de instruções.
+- O programa **compila sem erros**.  
+- As informações das cartas são **lidas corretamente** e **exibidas de forma organizada**.  
+- O código é **simples, indentado e comentado** para melhor legibilidade.  
+
+---
+
+📚 Exercício da disciplina de **Programação Estruturada (Estácio)**.  
+👨‍💻 Nível: **Novato**
